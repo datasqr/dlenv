@@ -21,6 +21,8 @@ USER root
 # ==================================================================
 # python
 # ------------------------------------------------------------------
+RUN python -m pip install --upgrade pip
+
 RUN $PIP_INSTALL \
         setuptools \
         numpy \
